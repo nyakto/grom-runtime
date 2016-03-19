@@ -43,12 +43,12 @@ final class DynamicTagAttributesWriter {
         }
     }
 
-    public void write(Writer writer, ViewUtils view, boolean allowShort) throws IOException {
+    public void write(Writer writer, boolean allowShort) throws IOException {
         if (!classNames.isEmpty()) {
-            view.writeTagAttribute(writer, allowShort, "class", StringUtils.join(classNames, ' '));
+            ViewUtils.writeTagAttribute(writer, allowShort, "class", StringUtils.join(classNames, ' '));
         }
         for (Map.Entry<String, Object> attribute : attributes.entrySet()) {
-            view.writeTagAttribute(writer, allowShort, attribute.getKey(), attribute.getValue());
+            ViewUtils.writeTagAttribute(writer, allowShort, attribute.getKey(), attribute.getValue());
         }
     }
 }
