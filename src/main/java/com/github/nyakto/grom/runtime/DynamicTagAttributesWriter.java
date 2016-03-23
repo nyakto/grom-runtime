@@ -1,4 +1,4 @@
-package ru.nyakto.grom.runtime;
+package com.github.nyakto.grom.runtime;
 
 import org.apache.commons.lang3.StringUtils;
 
