@@ -13,6 +13,7 @@
     <description>
         Runtime for GROM template engine
     </description>
+    <url>https://github.com/nyakto/grom-runtime</url>
 
     <developers>
         <developer>
